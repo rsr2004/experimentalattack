@@ -3,8 +3,9 @@
 > Este projeto consiste no desenvolvimento de um ataque cibernético.
 
 # Índice
-- [Introdução](#introdução)
+- [Introdução](#Introdução)
 - [Desenvolvimento](#Desenvolvimento)
+- [Conclusão](#Conclusão)
 
 # Introdução
 
@@ -96,20 +97,32 @@ NOTA: O valor máximo que podemos definir o TTL é 255.
 
 Este resultado significa que o router descartou o quadro porque o seu TTL expirou.
 
-## 10. Para verificar a vida útil do pacote realizei o seguinte comando:
+## 10. Após verificar o que acontece a um quadro quando o seu TTL expira, vou agora verificar qual o valor TTL até recebermos a resposta do host de destino.
 ```
-ping www.rtp.pt -i 2 -n1
+ping www.rtp.pt -i 9 -n 1
+```
+&
+```
+ping www.rtp.pt -i 10 -n 1
 ```
 
-####
-```sh
-# Clone o repositório
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+![pingresultttlimage](https://github.com/rsr2004/experimentalattack/assets/145347631/03ea8e99-49ad-4b75-80fa-5ec38937ffdb)
 
-# Entre no diretório do projeto
-cd nome-do-repositorio
 
-# Instale as dependências
-npm install
-# ou
-pip install -r requirements.txt
+Estes resultado implica que, no valor TTL de 27 a resposta é recebida do host de destino.
+
+
+# Conclusão
+
+Em suma, com este ataque de reconhecimento (Website Footprinting) consegui retirar algumas informações úteis para um ataque a esse mesmo website.
+
+Algumas informações conseguidas:
+- Endereço IP do domínio "rtp.pt": 146.75.34.192.
+- Tamanho máximo do quadro: 1472 bytes.
+- 
+-
+-
+-
+-
+-
+-
