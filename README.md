@@ -119,10 +119,4 @@ Em suma, com este ataque de reconhecimento (Website Footprinting) consegui retir
 Algumas informações conseguidas:
 - Endereço IP do domínio "rtp.pt": 146.75.34.192.
 - Tamanho máximo do quadro: 1472 bytes.
-- 
--
--
--
--
--
--
+- Valor do TTL até receber a resposta do host de destino: 27 hops.
